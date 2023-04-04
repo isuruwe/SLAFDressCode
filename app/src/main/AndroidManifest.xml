@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="icw.slaf.slafdresscode">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SLAFDressCode"
+        tools:targetApi="31"
+ >
+        <activity android:name=".Splash"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/DarkTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".CardFlipActivity"
+            android:label="@string/title_Officers"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/DarkTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo1wingcdr"
+            android:label="@string/title_wngcdr"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/DarkTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".Officers"
+            android:label="@string/title_Officers"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo1acdre"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo1avm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".oceramonialb"
+            android:label="@string/title_ceramonial1"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cbsqrbelow"
+            android:label="@string/title_sqrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cbwgcdr"
+            android:label="@string/title_wngcdr"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cbgpcapt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cbacdr"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cbavm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cbcoa"
+            android:label="@string/title_coa"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".owo2"
+            android:label="@string/title_walkout2"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo2wng"
+            android:label="@string/title_wngcdrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo2gpt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo2acdr"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo2avm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".redgpt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".redwng"
+            android:label="@string/title_wngcdrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".oredsea"
+            android:label="@string/title_redsearig"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo2coa"
+            android:label="@string/title_coa"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo1coa"
+            android:label="@string/title_coa"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo1gpcapt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".redacdr"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".redavm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".redcoa"
+            android:label="@string/title_coa"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ofieldress"
+            android:label="@string/title_5cfielddress"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdwng"
+            android:label="@string/title_wngcdrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdreg"
+            android:label="@string/title_regiment"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdgpt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdacdr"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdavm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdcoa"
+            android:label="@string/title_coa"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camgpt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camacdr"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camavm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camcoa"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".omess"
+            android:label="@string/title_omess"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".meeswng"
+            android:label="@string/title_wngcdrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".messgpt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".messacdr"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".messavm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".messcoa"
+            android:label="@string/title_coa"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".omet"
+            android:label="@string/title_omet"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".owk"
+            android:label="@string/title_owk"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkwng"
+            android:label="@string/title_wngcdrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkgpt"
+            android:label="@string/title_grpcpt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkacdr"
+            android:label="@string/title_acdre"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkavm"
+            android:label="@string/title_avm"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkcoa"
+            android:label="@string/title_coa"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".Airmen"
+            android:label="@string/title_airmen"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".awk"
+            android:label="@string/title_owk"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkfgt"
+            android:label="@string/title_fgtb"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkwo"
+            android:label="@string/title_mwo"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkcp"
+            android:label="@string/title_cplb"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wksnco"
+            android:label="@string/title_sncop"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wkwop"
+            android:label="@string/title_mwop"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".acam"
+            android:label="@string/title_camf"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cammwo"
+            android:label="@string/title_mwob"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camcp"
+            android:label="@string/title_cplb"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camsnp"
+            android:label="@string/title_sncop"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camwop"
+            android:label="@string/title_mwop"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".afdress"
+            android:label="@string/title_fielddress"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdfgt"
+            android:label="@string/title_fgtb"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".fdmwo"
+            android:label="@string/title_mwo"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".aspdress"
+            android:label="@string/title_sportdress"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".spfgt"
+            android:label="@string/title_fgtb"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".accrml"
+            android:label="@string/title_ceramonial"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cmfgt"
+            android:label="@string/title_fgtb"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cmwo"
+            android:label="@string/title_mwo"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cbar"
+            android:label="@string/title_bar"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".celect"
+            android:label="@string/title_elect"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ccook"
+            android:label="@string/title_cook"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cwaiter"
+            android:label="@string/title_waiter"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cpeon"
+            android:label="@string/title_peon"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".csanit"
+            android:label="@string/title_sanit"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".csign"
+            android:label="@string/title_sign"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".Civil"
+            android:label="@string/title_civil"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cwatcher"
+            android:label="@string/title_watch"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cspray"
+            android:label="@string/title_spray"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cmatten"
+            android:label="@string/title_maleatt"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cmcplp"
+            android:label="@string/title_cplb"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cmfgtp"
+            android:label="@string/title_fgtp"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".cmwop"
+            android:label="@string/title_mwop"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".amet"
+            android:label="@string/title_omet"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".spmwo"
+            android:label="@string/title_mwo"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ospdress"
+            android:label="@string/title_sportdress"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".splady"
+            android:label="@string/title_ladyoff"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".spmale"
+            android:label="@string/title_Maleoff"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ocam"
+            android:label="@string/title_camf"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".camwng"
+            android:label="@string/title_wngcdrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".wo1sqrbelow"
+            android:label="@string/title_sqrbelow"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".walkingout1"
+            android:label="@string/title_walkout"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ZoomActivity"
+            android:label="@string/title_zoom"
+            android:parentActivityName=".MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+
+        <activity android:name=".LayoutChangesActivity"
+            android:label="@string/title_layout_changes"
+            android:parentActivityName=".MainActivity">>
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+
+
+
+    </application>
+
+</manifest>
