@@ -4,7 +4,9 @@ plugins {
 
 android {
     compileSdk 32
-
+    aaptOptions {
+        cruncherEnabled = false
+    }
     defaultConfig {
         applicationId "icw.slaf.slafdresscode"
         minSdk 21

@@ -17,10 +17,10 @@ import android.widget.ImageView;
  */
 public class messgpt extends FragmentActivity {
 
-    static final int NUM_ITEMS = 6;
+    static final int NUM_ITEMS = 7;
     ImageFragmentPagerAdapter imageFragmentPagerAdapter;
     ViewPagerFixed viewPager;
-    public static final String[] IMAGE_NAME = {"messgpt1", "messgpt2","messgpt3","messgpt4", "messgpt5", "messgpt6", };
+    public static final String[] IMAGE_NAME = {"messgpt1", "messgpt2","messgpt3","messgpt4", "messgpt5", "messgpt6", "messgpt7",};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,7 @@ public class messgpt extends FragmentActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View swipeView = inflater.inflate(R.layout.swipe_fragment, container, false);
-             ImageView  ImageView = ( ImageView) swipeView.findViewById(R.id.photo_view);
+             TouchImageView    ImageView = (TouchImageView) swipeView.findViewById(R.id.photo_view);
 
 
             //ImageView imageView = (ImageView) swipeView.findViewById(R.id.imageView);

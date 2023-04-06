@@ -52,6 +52,7 @@ public class Officers extends ListActivity {
                 new Sample(R.string.title_omess, omess.class),
                 new Sample(R.string.title_omet, omet.class),
                 new Sample(R.string.title_owk, owk.class),
+                new Sample(R.string.title_oewo, oewo.class),
         };
 
         setListAdapter(new ArrayAdapter<Sample>(this,

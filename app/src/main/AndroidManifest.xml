@@ -680,6 +680,49 @@
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value="PsiClass:MainActivity" />
         </activity>
+        <activity android:name=".oewo"
+            android:label="@string/title_walkout"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ewoavm"
+            android:label="@string/title_walkout"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ewocoa"
+            android:label="@string/title_walkout"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ewogpt"
+            android:label="@string/title_walkout"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ewowng"
+            android:label="@string/title_walkout"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+        <activity android:name=".ewoacdr"
+            android:label="@string/title_walkout"
+            android:parentActivityName=".MainActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="PsiClass:MainActivity" />
+        </activity>
+
         <activity android:name=".ZoomActivity"
             android:label="@string/title_zoom"
             android:parentActivityName=".MainActivity">

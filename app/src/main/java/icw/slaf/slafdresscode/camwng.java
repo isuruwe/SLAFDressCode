@@ -63,7 +63,7 @@ public class camwng extends FragmentActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View swipeView = inflater.inflate(R.layout.swipe_fragment, container, false);
-             ImageView  ImageView = ( ImageView) swipeView.findViewById(R.id.photo_view);
+             TouchImageView    ImageView = (TouchImageView) swipeView.findViewById(R.id.photo_view);
 
 
             //ImageView imageView = (ImageView) swipeView.findViewById(R.id.imageView);

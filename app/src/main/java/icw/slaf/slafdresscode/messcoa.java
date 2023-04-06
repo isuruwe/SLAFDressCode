@@ -17,10 +17,10 @@ import android.widget.ImageView;
  */
 public class messcoa extends FragmentActivity {
 
-static final int NUM_ITEMS = 4;
+static final int NUM_ITEMS = 5;
         ImageFragmentPagerAdapter imageFragmentPagerAdapter;
         ViewPagerFixed viewPager;
-public static final String[] IMAGE_NAME = {"messcoa1", "messcoa2","messcoa3","messcoa4",  };
+public static final String[] IMAGE_NAME = {"messcoa1", "messcoa2","messcoa3","messcoa4", "messcoa5", };
 
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,7 @@ public static class SwipeFragment extends androidx.fragment.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View swipeView = inflater.inflate(R.layout.swipe_fragment, container, false);
-         ImageView  ImageView = ( ImageView) swipeView.findViewById(R.id.photo_view);
+         TouchImageView    ImageView = (TouchImageView) swipeView.findViewById(R.id.photo_view);
 
 
         //ImageView imageView = (ImageView) swipeView.findViewById(R.id.imageView);

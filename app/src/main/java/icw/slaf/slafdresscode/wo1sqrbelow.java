@@ -21,7 +21,7 @@ public class wo1sqrbelow extends FragmentActivity {
     static final int NUM_ITEMS = 6;
     ImageFragmentPagerAdapter imageFragmentPagerAdapter;
     icw.slaf.slafdresscode.ViewPagerFixed viewPager;
-    public static final String[] IMAGE_NAME = {"wo1mo", "womo2", "womo3", "womo4", "womo5", "womo6",};
+    public static final String[] IMAGE_NAME = {"womo1", "womo2", "womo3", "womo4", "womo5", "womo6",};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,7 @@ public class wo1sqrbelow extends FragmentActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View swipeView = inflater.inflate(R.layout.swipe_fragment, container, false);
-             ImageView  ImageView = ( ImageView) swipeView.findViewById(R.id.photo_view);
+             TouchImageView    ImageView = (TouchImageView) swipeView.findViewById(R.id.photo_view);
 
 
             //ImageView imageView = (ImageView) swipeView.findViewById(R.id.imageView);
